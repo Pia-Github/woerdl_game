@@ -11,9 +11,9 @@ from nltk.corpus import words
 
 word_list = words.words()
 
-letter_count = []
+letter_count = set([])
 for l in word_list:
-    letter_count.append(len(l))
+    letter_count.add(len(l))
 
 while True:
     selected_number = (input("Please enter the nuber of letters you'd like to guess: "))
@@ -33,20 +33,7 @@ while True:
     else:
         print("You can only enter a number")
 
-
-word_len = {}
-for key in word_list:
-    for value in letter_count:
-        word_len[key] = value
-        letter_count.remove(value)
-        break
-
-words_right_count_pre = list({i for i in word_len if word_len[i]== selected_number})
-
-words_right_count = []
-
-for x in words_right_count_pre:
-    words_right_count.append(x.lower())
+words_right_count = [word.lower() for word in word_list if len(word) == selected_number]
 
 
 
