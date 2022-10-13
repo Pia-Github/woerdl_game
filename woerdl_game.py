@@ -1,3 +1,4 @@
+#you need the nltk library to run this. In case you don't have it, instal it:
 #pip install --user -U nltk
 
 import nltk
