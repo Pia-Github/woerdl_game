@@ -1,4 +1,4 @@
-pip install --user -U nltk
+#pip install --user -U nltk
 
 import nltk
 nltk.download('words')
