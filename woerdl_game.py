@@ -85,7 +85,7 @@ while True:
             print(user_output_new)
 
     elif len(user_input) != selected_number:
-        print("Please enter " + str(selected_number) + " letters")
+        print("You idiot, are you not able to count?! You must enter exactly " + str(selected_number) + " letters")
 
     elif user_input not in words_right_count:
         print("You must enter an existing word")
