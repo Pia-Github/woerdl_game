@@ -68,7 +68,7 @@ while True:
     if len(user_input) == selected_number and user_input in words_right_count:
         count += 1
         if user_output.count(True) == len(user_output):
-            print("Congratulations!!!")
+            print("Congratulations!!! You needed " + str(count) + " attempts")
             break
         elif count > 5:
             print("FAAAAAAAIIILLL! The correct word would have been " + display_selected_word)
