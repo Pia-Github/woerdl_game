@@ -41,12 +41,20 @@ for key in word_list:
         letter_count.remove(value)
         break
 
-words_right_count = list({i for i in word_len if word_len[i]== selected_number})
+words_right_count_pre = list({i for i in word_len if word_len[i]== selected_number})
+
+words_right_count = []
+
+for x in words_right_count_pre:
+    words_right_count.append(x.lower())
+
+
+
 
 mystring = ''
 for x in words_right_count:
     mystring += ' ' + x
-mystring = mystring.lower()
+# mystring = mystring.lower()
 
 new_list = list(mystring)
 
