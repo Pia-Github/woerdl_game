@@ -160,7 +160,7 @@ for y in first_dict_list:
     else:
         second_list_1.append(y)
 
-print("first list: " + str(len(first_list)) + " items; second list: " + str(len(second_list_1)) + " items")
+print("first list: " + str(len(available_list)) + " items; second list: " + str(len(second_list_1)) + " items")
 
 
 
