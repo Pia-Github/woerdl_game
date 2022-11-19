@@ -128,15 +128,16 @@ print ("The first word to guess is \"" + guess_word + "\"")
 # define variables for next run (has to be added manually)
 guessed_word = guess_list
 feedback = ['False', 'False', 'False', 'False', 'True']
+feedback_copy = list(feedback)
 
 
 
 # combine user input with it's feedback in a string
 input_feedback = {}
 for key in guessed_word:
-    for value in feedback:
+    for value in feedback_copy:
         input_feedback[key] = value
-        feedback.remove(value)
+        feedback_copy.remove(value)
         break
 
 #need to fix!!!
