@@ -140,9 +140,6 @@ for key in guessed_word:
         feedback_copy.remove(value)
         break
 
-#need to fix!!!
-feedback = ['False', 'False', 'False', 'False', 'True']
-
 
 
 
